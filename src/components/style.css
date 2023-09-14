@@ -1,0 +1,95 @@
+.calendar{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .calendar-header h2 {
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  .calendar-header button {
+    background-color: white;
+    color: #333333;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .calendar-header button:hover {
+    transform: scale(1.5);
+  }
+  
+  .calendar-header button:active {
+    transform: scale(0.9);
+  }
+
+  .calendar-table {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar-table th,
+  .calendar-table td {
+    text-align: center;
+    padding: 15px 10px;
+  }
+  
+  .calendar-table th {
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #5D5FEF;
+    text-transform: uppercase;
+    border-radius: 10px;
+  }
+  
+  .calendar-cell-b {
+    font-size: 20px;
+    color: #333333;
+  }
+
+  .calendar-cell-g {
+    font-size: 20px;
+    color: #c3c3c3;
+  }
+
+  .calendar-table td:hover{
+    background-color: #5D5FEF;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .calendar-table td:hover .calendar-cell-g,
+  .calendar-table td:hover .calendar-cell-b {
+    color: #FFFFFF !important;
+  }
+
+
+@media (max-width:768px) {
+    .calendar-header h2 {
+        font-size: 24px;
+    }
+    
+    .calendar-header button{
+        font-size: 18px;
+    }
+
+    .calendar-table th,
+    .calendar-table td {
+        font-size: 16px;
+    }
+}
